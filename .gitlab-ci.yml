@@ -1,4 +1,4 @@
-image: monachus/hugo:latest  # Используем образ с Hugo
+image: monachus/hugo:latest 
 
 pages:
   script:
@@ -7,4 +7,4 @@ pages:
     paths:
       - public
   only:
-    - main  # Укажите ветку, которую вы используете для основного кода
+    - main  
