@@ -1,0 +1,40 @@
+baseURL = "https://example.com/"
+languageCode = "ru-en"
+title = "Denis Zhelaev CV"
+theme = "PaperMod"
+
+# Мультиязычность
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+    title = "Denis Zhelaev CV"
+  [languages.ru]
+    languageName = "Русский"
+    weight = 2
+    contentDir = "content/ru"
+    title = "Денис Желаев CV"
+
+# Настройки темы PaperMod
+[params]
+  description = "Сайт о моем обучении в ПГТУ"
+  defaultTheme = "light" 
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hideMenu = false
+
+# Кнопка переключения языка
+[params.header]
+  [[params.header.actions]]
+    name = "English"
+    url = "/en/"
+    weight = 1
+  [[params.header.actions]]
+    name = "Русский"
+    url = "/ru/"
+    weight = 2
+
+# Скрыть копирайт
+[params.footer]
+  enable = false
