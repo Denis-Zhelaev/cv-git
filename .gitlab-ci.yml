@@ -1,0 +1,10 @@
+image: monachus/hugo:latest  # Используем образ с Hugo
+
+pages:
+  script:
+    - hugo --minify
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # Укажите ветку, которую вы используете для основного кода
